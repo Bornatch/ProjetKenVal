@@ -6,17 +6,17 @@ namespace TestProjet.Schema {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
-    [Schema(@"http://TestProjet.Schema.FilePinCodeCardIDStatus",@"Root")]
+    [Schema(@"http://TestProjet.Schema.FileCardIdStatus_Schema",@"Root")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"Root"})]
-    public sealed class FilePinCodeCardIDStatus : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class FileCardIdStatus_Schema : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns=""http://TestProjet.Schema.FilePinCodeCardIDStatus"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""http://TestProjet.Schema.FilePinCodeCardIDStatus"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns=""http://TestProjet.Schema.FileCardIdStatus_Schema"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""http://TestProjet.Schema.FileCardIdStatus_Schema"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:annotation>
     <xs:appinfo>
       <b:schemaInfo standard=""Flat File"" root_reference=""Root"" default_pad_char="" "" pad_char_type=""char"" count_positions_by_byte=""false"" parser_optimization=""speed"" lookahead_depth=""3"" suppress_empty_nodes=""false"" generate_empty_nodes=""true"" allow_early_termination=""false"" early_terminate_optional_fields=""false"" allow_message_breakup_of_infix_root=""false"" compile_parse_tables=""false"" />
@@ -36,24 +36,17 @@ namespace TestProjet.Schema {
             <b:groupInfo sequence_number=""0"" />
           </xs:appinfo>
         </xs:annotation>
-        <xs:element name=""PinCode"" type=""xs:string"">
+        <xs:element name=""CardID"" type=""xs:string"">
           <xs:annotation>
             <xs:appinfo>
               <b:fieldInfo sequence_number=""1"" justification=""left"" />
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name=""CardID"" type=""xs:string"">
-          <xs:annotation>
-            <xs:appinfo>
-              <b:fieldInfo sequence_number=""2"" justification=""left"" />
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
         <xs:element name=""Status"" type=""xs:string"">
           <xs:annotation>
             <xs:appinfo>
-              <b:fieldInfo sequence_number=""3"" justification=""left"" />
+              <b:fieldInfo sequence_number=""2"" justification=""left"" />
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
@@ -62,7 +55,7 @@ namespace TestProjet.Schema {
   </xs:element>
 </xs:schema>";
         
-        public FilePinCodeCardIDStatus() {
+        public FileCardIdStatus_Schema() {
         }
         
         public override string XmlContent {

@@ -9,7 +9,7 @@ namespace TestProjet.Schema {
     [Schema(@"http://TestProjet.Schema.FileUIDInputOutput",@"Root")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"Root"})]
-    public sealed class FileUIDInputOutput : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class FileUIDInputOutput_Schema : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
@@ -76,7 +76,7 @@ namespace TestProjet.Schema {
   </xs:element>
 </xs:schema>";
         
-        public FileUIDInputOutput() {
+        public FileUIDInputOutput_Schema() {
         }
         
         public override string XmlContent {

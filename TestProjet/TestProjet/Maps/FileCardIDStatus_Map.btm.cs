@@ -2,11 +2,11 @@ namespace TestProjet.Maps {
     
     
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"TestProjet.Schema.FileUIDCardID_Schema", typeof(global::TestProjet.Schema.FileUIDCardID_Schema))]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"TestProjet.Schema.FileCardIDAccessRightUID", typeof(global::TestProjet.Schema.FileCardIDAccessRightUID))]
-    public sealed class FileCardIDAccessRightUID_Map : global::Microsoft.XLANGs.BaseTypes.TransformBase {
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"TestProjet.Schema.FileCardIdStatus_Schema", typeof(global::TestProjet.Schema.FileCardIdStatus_Schema))]
+    public sealed class FileCardIDStatus_Map : global::Microsoft.XLANGs.BaseTypes.TransformBase {
         
         private const string _strMap = @"<?xml version=""1.0"" encoding=""UTF-16""?>
-<xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"" xmlns:msxsl=""urn:schemas-microsoft-com:xslt"" xmlns:var=""http://schemas.microsoft.com/BizTalk/2003/var"" exclude-result-prefixes=""msxsl var s0 userCSharp"" version=""1.0"" xmlns:ns0=""http://TestProjet.Schema.FileCardIDAccessRightUID"" xmlns:s0=""http://TestProjet.Schema.FileUIDCardID_Schema"" xmlns:userCSharp=""http://schemas.microsoft.com/BizTalk/2003/userCSharp"">
+<xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"" xmlns:msxsl=""urn:schemas-microsoft-com:xslt"" xmlns:var=""http://schemas.microsoft.com/BizTalk/2003/var"" exclude-result-prefixes=""msxsl var s0 userCSharp"" version=""1.0"" xmlns:s0=""http://TestProjet.Schema.FileUIDCardID_Schema"" xmlns:ns0=""http://TestProjet.Schema.FileCardIdStatus_Schema"" xmlns:userCSharp=""http://schemas.microsoft.com/BizTalk/2003/userCSharp"">
   <xsl:output omit-xml-declaration=""yes"" method=""xml"" version=""1.0"" />
   <xsl:template match=""/"">
     <xsl:apply-templates select=""/s0:Root"" />
@@ -16,13 +16,10 @@ namespace TestProjet.Maps {
       <CardID>
         <xsl:value-of select=""CardID/text()"" />
       </CardID>
-      <xsl:variable name=""var:v1"" select=""userCSharp:MyFantasticDoor(&quot;group &quot; , &quot;&quot;)"" />
-      <AccessRight>
+      <xsl:variable name=""var:v1"" select=""userCSharp:MyStatus()"" />
+      <Status>
         <xsl:value-of select=""$var:v1"" />
-      </AccessRight>
-      <UID>
-        <xsl:value-of select=""UID/text()"" />
-      </UID>
+      </Status>
     </ns0:Root>
   </xsl:template>
   <msxsl:script language=""C#"" implements-prefix=""userCSharp""><![CDATA[
@@ -30,12 +27,20 @@ namespace TestProjet.Maps {
 //that concatenates two inputs. Change the number of parameters of
 //this function to be equal to the number of inputs connected to this functoid.*/
 
-public string MyFantasticDoor(string param1, string param2)
-{
-Random rand = new Random();
-param2 = rand.Next(3).ToString();
 
-	return param1+param2;
+public string MyStatus()
+{
+String status;
+int param;
+Random rand = new Random();
+param = rand.Next(2);
+if(param<2){
+status = ""In"";
+}
+else{
+status = ""Out"";
+}
+	return status;
 }
 
 
@@ -51,9 +56,9 @@ param2 = rand.Next(3).ToString();
         
         private const global::TestProjet.Schema.FileUIDCardID_Schema _srcSchemaTypeReference0 = null;
         
-        private const string _strTrgSchemasList0 = @"TestProjet.Schema.FileCardIDAccessRightUID";
+        private const string _strTrgSchemasList0 = @"TestProjet.Schema.FileCardIdStatus_Schema";
         
-        private const global::TestProjet.Schema.FileCardIDAccessRightUID _trgSchemaTypeReference0 = null;
+        private const global::TestProjet.Schema.FileCardIdStatus_Schema _trgSchemaTypeReference0 = null;
         
         public override string XmlContent {
             get {
@@ -84,7 +89,7 @@ param2 = rand.Next(3).ToString();
         public override string[] TargetSchemas {
             get {
                 string[] _TrgSchemas = new string [1];
-                _TrgSchemas[0] = @"TestProjet.Schema.FileCardIDAccessRightUID";
+                _TrgSchemas[0] = @"TestProjet.Schema.FileCardIdStatus_Schema";
                 return _TrgSchemas;
             }
         }

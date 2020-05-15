@@ -88,13 +88,6 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="Schema\FilePinCodeCardIDStatus_Schema.xsd">
-      <TypeName>FilePinCodeCardIDStatus</TypeName>
-      <Namespace>TestProjet.Schema</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-  </ItemGroup>
-  <ItemGroup>
     <Schema Include="Schema\FileCardIDAccessRightUID_Schema.xsd">
       <TypeName>FileCardIDAccessRightUID</TypeName>
       <Namespace>TestProjet.Schema</Namespace>
@@ -103,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Schema Include="Schema\FileUIDInputOutput_Schema.xsd">
-      <TypeName>FileUIDInputOutput</TypeName>
+      <TypeName>FileUIDInputOutput_Schema</TypeName>
       <Namespace>TestProjet.Schema</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -114,6 +107,27 @@
       <Namespace>TestProjet.Maps</Namespace>
       <SubType>Task</SubType>
     </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Maps\FileCardIDPinCodeUID_Map.btm">
+      <TypeName>FileCardIDPinCodeUID</TypeName>
+      <Namespace>TestProjet.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Maps\FileCardIDStatus_Map.btm">
+      <TypeName>FileCardIDStatus_Map</TypeName>
+      <Namespace>TestProjet.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schema\FileCardIdStatus_Schema.xsd">
+      <TypeName>FileCardIdStatus_Schema</TypeName>
+      <Namespace>TestProjet.Schema</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
