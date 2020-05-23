@@ -35,7 +35,7 @@ namespace G4_SFTP_UC1.Pipelines
 "a=\"Name\" _locID=\"4\" Name=\"ResolveParty\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4"+
 "10e-4cce-4536-83fa-4a5040674ad6\" />      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "0fd2413e-fd5d-4b99-86ff-e92313a1eae1";
+        private const string _versionDependentGuid = "81bb3abe-753e-40b9-977e-f369882cc9c5";
         
         public GateControlPincode_Receive()
         {

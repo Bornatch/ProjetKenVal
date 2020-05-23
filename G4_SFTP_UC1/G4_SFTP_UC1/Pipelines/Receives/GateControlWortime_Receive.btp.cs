@@ -35,7 +35,7 @@ namespace G4_SFTP_UC1.Pipelines.Receives
 "ttrData=\"Name\" _locID=\"4\" Name=\"ResolveParty\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId="+
 "\"9d0e410e-4cce-4536-83fa-4a5040674ad6\" />      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "a68a69af-7ad1-4e64-b99f-1b2232a3a191";
+        private const string _versionDependentGuid = "0eee9a7c-6d80-447c-baca-a667295fe8ef";
         
         public GateControlWortime_Receive()
         {

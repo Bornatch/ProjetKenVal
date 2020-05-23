@@ -34,7 +34,7 @@ namespace G4_SFTP_UC1.Pipelines.Send
 "code\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4108-4cce-4536-83fa-4a5040674ad6\" /"+
 ">      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "010c866a-dadb-4cd5-90c0-cac76eaec61b";
+        private const string _versionDependentGuid = "52410afd-54ab-4a9e-991d-52a20579e95d";
         
         public SAPWorktime_Send()
         {

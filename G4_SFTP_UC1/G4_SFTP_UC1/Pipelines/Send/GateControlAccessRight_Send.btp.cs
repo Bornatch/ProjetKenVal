@@ -34,7 +34,7 @@ namespace G4_SFTP_UC1.Pipelines.Send
 "ccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4108-4cce-4536-83fa-4a5040674ad6\" />      <Co"+
 "mponents />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "76419d02-33a2-4455-a823-2ce5674eefdd";
+        private const string _versionDependentGuid = "e2dc67fd-284e-44ef-bcdd-bd2ea491178e";
         
         public GateControlAccessRight_Send()
         {

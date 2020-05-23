@@ -35,7 +35,7 @@ namespace G4_SFTP_UC1.Pipelines.Receives
 "a=\"Name\" _locID=\"4\" Name=\"ResolveParty\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4"+
 "10e-4cce-4536-83fa-4a5040674ad6\" />      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "2b5aa434-d048-4848-a8a5-40af695036d9";
+        private const string _versionDependentGuid = "71f463db-0ecc-4ebd-b05f-df296d140f36";
         
         public Emergency_Receive()
         {
