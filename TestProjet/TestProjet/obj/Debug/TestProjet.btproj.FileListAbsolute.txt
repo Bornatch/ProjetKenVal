@@ -1,4 +1,0 @@
-C:\AllFiles\ProjetKenVal\TestProjet\TestProjet\bin\Debug\TestProjet.dll
-C:\AllFiles\ProjetKenVal\TestProjet\TestProjet\bin\Debug\TestProjet.pdb
-C:\AllFiles\ProjetKenVal\TestProjet\TestProjet\obj\Debug\TestProjet.dll
-C:\AllFiles\ProjetKenVal\TestProjet\TestProjet\obj\Debug\TestProjet.pdb
