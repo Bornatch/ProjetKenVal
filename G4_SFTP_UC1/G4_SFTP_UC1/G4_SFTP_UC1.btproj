@@ -114,28 +114,11 @@
       <Namespace>G4_SFTP_UC1.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="Schemas\UIDCardID_Schema.xsd">
-      <TypeName>UIDCardID_Schema</TypeName>
-      <Namespace>G4_SFTP_UC1.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="PropertySchema.xsd">
       <TypeName>PropertySchema</TypeName>
       <Namespace>G4_SFTP_UC1.PropertySchema</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="Schemas\PincodeUID_schema.xsd">
-      <TypeName>PincodeUID_schema</TypeName>
-      <Namespace>G4_SFTP_UC1.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-  </ItemGroup>
-  <ItemGroup>
-    <Map Include="Maps\UIDCardIDFF_to_UIDCardID.btm">
-      <TypeName>UIDCardIDFF_to_UIDCardID</TypeName>
-      <Namespace>G4_SFTP_UC1.Maps</Namespace>
-      <SubType>Task</SubType>
-    </Map>
   </ItemGroup>
   <ItemGroup>
     <Pipeline Include="Pipelines\Receives\GateControlPincode_Receive.btp">
@@ -215,6 +198,11 @@
     </Pipeline>
   </ItemGroup>
   <ItemGroup>
+    <Map Include="Maps\UIDCardID_to_CardIDAccessRightUID_FullAccess.btm">
+      <SubType>Task</SubType>
+      <TypeName>UIDCardID_to_CardIDAccessRightUID_Copy</TypeName>
+      <Namespace>G4_SFTP_UC1.Maps</Namespace>
+    </Map>
     <Content Include="WinSCP.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -35,7 +35,7 @@ namespace G4_SFTP_UC1.Pipelines.Receives
 "a=\"Name\" _locID=\"4\" Name=\"ResolveParty\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4"+
 "10e-4cce-4536-83fa-4a5040674ad6\" />      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "11d0fcb3-ac64-4ce2-86bb-047c365b10c6";
+        private const string _versionDependentGuid = "8bf3ab4d-dd18-4d59-b7ff-fcc9159cefa0";
         
         public BadgeMakerDB_Receive()
         {

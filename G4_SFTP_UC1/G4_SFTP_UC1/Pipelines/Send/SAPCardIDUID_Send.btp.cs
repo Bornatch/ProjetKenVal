@@ -34,7 +34,7 @@ namespace G4_SFTP_UC1.Pipelines.Send
 "xOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4108-4cce-4536-83fa-4a5040674ad6\" />      <Components /> "+
 "   </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "3122edf3-1c76-47cf-9a9a-ef2e1f6ad453";
+        private const string _versionDependentGuid = "92dc8118-b8f9-487a-9d1d-7b6089755fca";
         
         public SAPCardIDUID_Send()
         {
